@@ -14,7 +14,7 @@
         src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.2.3/backbone-min.js"></script>
 <script type="application/javascript">
     var MailModel = Backbone.Model.extend({
-        urlRoot: "/mail-sender/rest/mail"
+        urlRoot: "/rest/mail"
     });
 
     var mailModel = new MailModel({from: '', to: 'enes793k@gmail.com', subject: 'deneme', message: 'deneme message'});
