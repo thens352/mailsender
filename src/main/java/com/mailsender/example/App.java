@@ -13,10 +13,10 @@ public class App {
                 new ClassPathXmlApplicationContext("applicationContext.xml");
 
         MailSenderService mm = (MailSenderService) context.getBean("mailSenderService");
-        mm.sendMail("decorationcontact@gmail.com",
-                "decorationcontact@gmail.com",
-                "Testing123",
-                "Testing only \n\n Hello Spring Email Sender");
+        mm.sendMail("from",
+                "to",
+                "subject",
+                "context");
 
     }
 }

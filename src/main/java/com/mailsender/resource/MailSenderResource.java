@@ -22,7 +22,7 @@ public class MailSenderResource {
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
     public Response save(Mail mail) {
-        mail.setFrom("decorationcontact@gmail.com");
+        mail.setFrom("from");
         mailSenderService.sendMail(mail.getFrom(), mail.getTo(), mail.getSubject(), mail.getMessage());
         return Response.ok().build();
     }
